@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 
 Image logoWidget(String imagePath){
-  return Image(
+  return Image.asset(
     imagePath,
-    fit: BoxFit.fill,
+    fit: BoxFit.fitWidth,
     width: 240,
     height: 240,
     color: Colors.white,
@@ -35,7 +35,7 @@ TextField reusableTextField(String text, IconData icon, bool isPasswordType, Tex
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
           borderSide: BorderSide(
-            width: ,
+            width: 0,
             style: BorderStyle.none,
           ),
         ),
